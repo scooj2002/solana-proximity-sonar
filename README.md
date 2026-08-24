@@ -59,3 +59,44 @@ Developers working on this repository are **strictly prohibited** from making au
 
 ## 📜 License
 MIT License - Proprietary Core Logic & Architecture.
+
+
+**********************************************************************************************************************************************************************************
+
+---
+
+## 🔮 Avisierte Visionsvorstellung & Ausbauphase (Future Roadmap)
+
+> **HINWEIS FÜR ENTWICKLER:** Dieser Abschnitt beschreibt die visonäre Skalierung des Kern-Protokolls. Das nachfolgende Framework dient als Grundlage für spätere Modul-Integrationen. Der Code der Phase-1-Engine ist so zu strukturieren, dass diese Anwendungsfälle ohne Refactoring des Solana-Escrows angedockt werden können.
+
+---
+
+### 📦 Modul A: Hyper-Local Courier & Errand Sonar (Mikro-Logistik)
+* **Das Konzept:** Spontane Botengänge, Einkäufe, Schnäppchen-Checks vor Ort oder Express-Bringdienste („Bring mir Paket X von Tor A“, „Hol mir die Aktion im Supermarkt um die Ecke“).
+* **Reverse-Auction-Timer (Rückwärts-Auktion):**
+  * Startpreis verfällt linear über einen definierten Countdown-Balken (z. B. 60 Sekunden).
+  * Wer im Nahbereich zuerst akzeptiert, sichert sich den Auftrag zum aktuellen Live-Preis.
+* **Dual-Vault Escrow System:**
+  * **Vault 1:** Dienstleister-Lohn (dynamisch über den Auktionsbalken ermittelt).
+  * **Vault 2:** Auslagen-Budget für den Einkauf (Freigabe erst nach Beleg-Upload im Chat + 50m-Nahbereichs-Ping vor Ort).
+
+---
+
+### ☕ Modul B: Love-Sonar (Proximity Match Engine)
+* **Das Konzept:** Anonymes, ortsbezogenes Dating ohne Tagelanges Swipen – ausgelegt auf spontane Begegnungen im Nahbereich (Club, Park, Event).
+* **Time-Locked Invite Escrow:**
+  * Spendieren von Drinks/Kaffee per Solana-Smart-Contract.
+  * Strikter **2-Stunden-Timer (Auto-Refund):** Reagiert die Person nicht oder kommt der 50m-Ping am Treffpunkt nicht zustande, fließen **100 % der Einladungssumme automatisch** in die Wallet des Einladenden zurück.
+* **No-Terminal Gastro Clearance:**
+  * **P2P Wallet-Freigabe:** Automatische Auszahlung des Getränke-Budgets an die Gegenseite direkt nach dem 50m-Ping vor Ort.
+  * **API-Gutschein-Bridge:** Alternativer Auto-Import von digitalen Kassengutscheinen (Apple/Google Pay Voucher) ohne notwendige Krypto-Hardware vor Ort im Café/in der Bar.
+
+---
+
+### 📐 Standardisierte Ausbau-Kriterien (Vision-Governance)
+Jedes zukünftige Modul nutzt verpflichtend die Kern-Komponenten der Plattform:
+1. **Dynamic Proximity Header** (Live Cent/SOL-Rechner mit Grün-Orange-Rot Zonen).
+2. **On-Chain Reputations-System** (3-Strike-Regel für No-Shows).
+3. **50m High-Pitch Beeper** (Akustisches Signal zur Last-Mile-Identifikation).
+
+
